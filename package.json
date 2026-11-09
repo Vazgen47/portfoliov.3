@@ -1,0 +1,39 @@
+{
+  "name": "mkheyan-agency",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mkheyan Agency — premium bilingual (Armenian / English) agency website built with React, Vite, Tailwind CSS, GSAP and Lenis.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/generate-sitemap.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "check": "node scripts/check-project.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter-tight": "^5.1.0",
+    "@fontsource/instrument-serif": "^5.1.0",
+    "@fontsource/noto-sans-armenian": "^5.1.0",
+    "@fontsource/noto-serif-armenian": "^5.1.0",
+    "firebase": "^10.14.1",
+    "framer-motion": "^11.15.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.11"
+  }
+}
